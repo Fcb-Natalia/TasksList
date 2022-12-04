@@ -1,11 +1,44 @@
 .form {
-
+    display: grid;
+    grid-template-columns: 1fr auto;
+    grid-gap: 10px;
 }
 
 .form__input {
-
+    box-sizing: border-box;
+    display: inline-block;
+    padding: 2px;
+    border: 1px solid lightgrey;
 }
 
 .form__button {
-
+    border: none;
+    background-color: teal;
+    color: white;
+    padding: 10px;
+    margin: auto;
 }
+
+@media (max-widht: 767px) {
+    .form
+    display: flex;
+    flex-direction: column; 
+
+    .form__input
+    width: 100%;
+    margin: auto; 
+
+    form__button
+    width: 100%;
+    margin: auto;
+}
+
+.form__button:hover {
+    background-color: hsl(180, 100%, 60%);
+}
+
+.form__button:active {
+    background-color: hsl(180, 100%, 75%);
+}
+
+
