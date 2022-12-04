@@ -1,8 +1,50 @@
-.list__textButton {
-
+.list {
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
 }
 
-.list {
-    list-style-type: none;
+.list__item {
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    grid-gap: 10px;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+.list__content--done {
+    text-decoration: line-through;
+}
+
+.list__textButton {
+    border: none;
+    color: white;
+    width: 30px;
+    height: 30px;
     padding: 0px;
+}
+
+.list__textButton--done {
+    background: hsl(120, 64%, 32%);
+}
+
+.list__textButton--done:hover {
+    background: hsl(120, 64%, 39%);
+}
+
+.list__textButton--done:active {
+    background: hsl(120, 64%, 45%);
+}
+
+.list__textButton--remove {
+    background: hsl(0, 71%, 43%);
+}
+
+.list__textButton--remov:hover {
+    background: hsl(0, 71%, 46%);
+}
+
+.list__textButton--remov:active {
+    background: hsl(0, 71%, 55%);
 }
