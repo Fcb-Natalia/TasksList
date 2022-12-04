@@ -20,17 +20,20 @@
 }
 
 @media (max-widht: 767px) {
-    .form
-    display: flex;
-    flex-direction: column; 
+    .form {display: flex;
+        flex-direction: column; 
+    }
+    
 
-    .form__input
-    width: 100%;
+    .form__input {
+        width: 100%;
     margin: auto; 
-
-    form__button
-    width: 100%;
-    margin: auto;
+    }
+    
+    form__button {
+        width: 100%;
+        margin: auto;
+    } 
 }
 
 .form__button:hover {
