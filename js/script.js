@@ -43,6 +43,8 @@
             if (newTaskContent === "") {
                 return;
             }
+
+            addNewTask(newTaskContent);
             
         });
     };
