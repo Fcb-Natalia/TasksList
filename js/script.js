@@ -23,6 +23,18 @@
 
     };
 
+    const addNewTask = () => {
+        if (newTaskContent === "") {
+            return;
+        }
+
+        tasks.push({
+            content: newTaskContent
+        });
+
+        render();
+    }
+
     const init = () => {
         render();
 
@@ -32,9 +44,7 @@
 
             const newTaskContent = document.querySelector(".js-newTask").value.trim();
             
-            if (newTaskContent === "") {
-                return;
-            }
+          
 
         });
     };
