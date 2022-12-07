@@ -34,7 +34,7 @@
 
         document.querySelector(".js-tasks").innerHTML = htmlString;
 
-        const removeButtons = document.querySelectorAll(".js-remove");
+        const removeButtons = document.querySelectorAll(".js-textRemove");
 
         removeButtons.forEach((removeButton, index) => {
             removeButton.addEventListener("click", () => {
