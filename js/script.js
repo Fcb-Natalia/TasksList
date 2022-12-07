@@ -14,6 +14,11 @@
         render();
     }
 
+    const toggleTaskDone = (taskIndex) => {
+        tasks[taskIndex].done =! tasks[taskIndex].done;
+        render();
+    }
+
     const render = () => {
 
         let htmlString = "";
@@ -44,6 +49,15 @@
 
         });
 
+        const toggleDoneButtons = document.querySelectorAll(".js-buttonDone");
+
+        toggleDoneButtons.forEach((toggleDoneButton, index) => {
+            toggleDoneButton.addEventListener("click", () => {
+                toggleTaskDone(index);
+
+            });
+
+        });
     };
 
     const onFormSubmit = (event) => {
