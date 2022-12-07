@@ -1,6 +1,19 @@
 {
     const tasks = []
 
+    const addNewTask = (newTaskContent) => {
+        tasks.push({
+            content: newTaskContent
+        });
+
+        render();
+    }
+
+    const removeTask = (TaskIndex) => {
+        tasks.splice(TaskIndex, 1);
+        render();
+    }
+
     const render = () => {
 
         let htmlString = "";
@@ -21,6 +34,16 @@
 
         document.querySelector(".js-tasks").innerHTML = htmlString;
 
+        const removeButtons = document.querySelectorAll(".js-remove");
+
+        removeButtons.forEach((removeButton, index) => {
+            removeButton.addEventListener("click", () => {
+                removeTask(index);
+
+            });
+
+        });
+
     };
 
     const onFormSubmit = (event) => {
@@ -33,15 +56,6 @@
         }
 
         addNewTask(newTaskContent);
-        
-    }
-
-    const addNewTask = (newTaskContent) => {
-        tasks.push({
-            content: newTaskContent
-        });
-
-        render();
     }
 
     const init = () => {
