@@ -26,11 +26,11 @@
 }
 
 .list__textButton--done {
-    background: hsl(120, 64%, 32%);
+    background: hsl(120, 64%, 39%);
 }
 
 .list__textButton--done:hover {
-    background: hsl(120, 64%, 39%);
+    background: hsl(120, 64%, 45%);
 }
 
 .list__textButton--done:active {
@@ -42,9 +42,9 @@
 }
 
 .list__textButton--remov:hover {
-    background: hsl(0, 71%, 46%);
+    background: hsl(0, 71%, 55%);
 }
 
 .list__textButton--remov:active {
-    background: hsl(0, 71%, 55%);
+    background: hsl(0, 71%, 65%);
 }
