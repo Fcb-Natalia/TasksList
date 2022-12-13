@@ -49,12 +49,12 @@
             htmlString += `
             <li class="list js-tasks">
             <button class="list__textButton list__textButton--done js-buttonDone">
-            ${task.done ? "✅" : ""} 
+            ${task.done ? "&#10004" : ""} 
             </button>
             <span class="list__content${task.done ? "list__content--done" : ""}">
             ${task.content}</span>
             <button class="list__textButton list__textButton--remove js-textRemove">
-            🗑️</button>
+            &#128465</button>
             </li>
             `;
         }
